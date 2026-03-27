@@ -6,3 +6,6 @@ def español(request):
 
 def english(request):
     return render(request, 'ingles.html')
+
+def test(request):
+    return render (request, 'test.html')

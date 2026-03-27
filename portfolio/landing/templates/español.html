@@ -1,53 +1,45 @@
 {% extends 'index.html' %}
 
-{% block title %}Bienvenido{% endblock %}
+{% block title %}
+Bienvenido
+{% endblock %}
 
 {% block body %}
-<div>
-    <div>
-        <p class="d-flex justify-content-center" style="font-size: 100px;">Bienvenido</p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="offset-md-2 col-md-8 offset-sm-0 col-sm-12">
-                <div class="text-center ps-5 pe-5">
-                    <p class="d-flex justify-content-center" style="font-size:medium; color: #8AFFFF;">Hola, me llamo Marcos y soy programador. Estoy estudiando
-                        una Tecnicatura Universitaria en Programacion en la Universidad Tecnologica Nacional de Buenos Aires. 
-                        Las areas de programacion que mas me gustan son el desarrollo web y automatizaciones, ambas con Python y sus librerias
-                    </p>
-                </div>
-                <div class="d-flex justify-content-center" >
-                    <div class="card m-2" style="width: 18rem; display: inline-block; color: #8AFFFF; background-color: #28547A;">
-                        <div class="card-body">
-                            <h5 class="card-title">CV</h5>
-                            <p class="card-text">Aca podras ver mi Curriculum Vitae en donde detallo mi experiencia laboral y estudios en curso</p>
-                            <a href="#" type="button" class="d-flex justify-content-center btn btn-primary button card-link">Card link</a>
+
+                        <div class="container">
+                            <div class="d-flex justify-content-center">
+                                <p class="h1 pt-5">Bienvenido!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card m-2" style="width: 18rem; display: inline-block; color: #8AFFFF; background-color: #28547A;">
-                        <div class="card-body">
-                            <h5 class="card-title">Portfolio</h5>
-                            <p class="card-text">En esta seccion muestro los proyectos en los que trabaje, con un link directo a ellos y al codigo en GitHub</p>
-                            <a href="#" type="button" class="d-flex justify-content-center btn btn-primary button card-link">Card link</a>
+                        <div class="container">
+                            <div class="d-flex">
+                                <p class="text-center pt-4">Hola, me llamo Marcos y soy programador. Estoy estudiando una Tecnicatura Universitaria en Programacion en la Universidad Tecnologica Nacional de Buenos Aires. Las areas de programacion que mas me gustan son el desarrollo web y automatizaciones, ambas con Python y sus librerias</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card m-2" style="width: 18rem; display: inline-block; color: #8AFFFF; background-color: #28547A;">
-                        <div class="card-body">
-                            <h5 class="card-title">Blog</h5>
-                            <p class="card-text">Uso este blog para escribir articulos acerca de lo que estoy aprendiendo en la carrera combinandolo con investigacion extra</p>
-                            <a href="#" type="button" class="d-flex justify-content-center btn btn-primary button card-link">Card link</a>
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">CV</h4>
+                                    <div class="card-text">Para ver mi curriculum vitae con mis datos de contacto, experiencia laboral y estudios</div>
+                                    <a href="#" type="button" class="border border-alert bg bg-primary text-light card-links btn btn-succes mt-3">Ir</a>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Portfolio</h4>
+                                    <div class="card-text">Aca muestro los proyectos en los que trabaje y estoy desarrollando</div>
+                                    <a href="#" type="button" class="border border-alert bg bg-primary text-light card-links btn btn-succes mt-3">Ir</a>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Contacto</h4>
+                                    <div class="card-text">Mis datos de contacto y links a mi Linkedin, Github e Instagram</div>
+                                    <a href="#" type="button" class="border border-alert bg bg-primary text-light card-links btn btn-succes mt-3">Ir</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card m-2" style="width: 18rem; display: inline-block; color: #8AFFFF; background-color: #28547A;">
-                        <div class="card-body">
-                            <h5 class="card-title">Contacto</h5>
-                            <p class="card-text">Entra aca para ver mi telefono, mail y links directos LinkedIn y GitHub</p>
-                            <a href="#" type="button" class="d-flex justify-content-center btn btn-primary button card-link">Card link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                       
+
 {% endblock %}
+                           
