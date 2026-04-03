@@ -1,7 +1,8 @@
 {% extends 'index.html' %}
+{% load static %}
 
 {% block title %}
-Bienvenido
+Portfolio Marcos Alvarez
 {% endblock %}
 
 {% block body %}
@@ -14,9 +15,9 @@ Bienvenido
                     <div class="fs-3 opacity-50">Backend developer</div>
                     <div class="fs-5 opacity-50">marcosalvarez401@gmail.com</div>
                     <div class="d-flex justify-content-center align-items-center mt-4">
-                        <a target="_blank" class="m-2" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/330px-PDF_file_icon.svg.png" style="height: 2rem;" alt="cv"></a>
-                        <a target="_blank" class="m-2" href="https://www.linkedin.com/in/marcos-ezequiel-alvarez/"><img src="https://images.icon-icons.com/1043/PNG/512/social_media_icons_flat_shadow_set_512x512_0010_linkedin_icon-icons.com_76459.png" alt="Linkedin" style="height: 2rem;"></a>
-                        <a target="_blank" class="m-2" href="https://github.com/marcosColo"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" style="height: 2rem;"></a>
+                        <a target="_blank" class="m-2" href="#"><img src="{% static 'landing/pdf.png' %}" style="height: 2rem;" alt="cv"></a>
+                        <a target="_blank" class="m-2" href="https://www.linkedin.com/in/marcos-ezequiel-alvarez/"><img src="{% static 'landing/ld.png' %}" alt="Linkedin" style="height: 2rem;"></a>
+                        <a target="_blank" class="m-2" href="https://github.com/marcosColo"><img src="{% static 'landing/github.png' %}" alt="Github" style="height: 2rem;"></a>
                         
                 </div>
                 </div>
@@ -28,13 +29,13 @@ Bienvenido
     </div>
 </div>
 <div class="container">
-    <div class="d-flex text-center mt-5 pt-2 mb-5">
+    <div class="d-flex text-center mt-5 pt-2">
         <p class="fs-5">Hola, soy Marcos, estudiante de Tecnicatura Universitaria en Programacion en la Universidad Tecnologica Nacional de Buenos Aires. Las areas de programacion que mas me gustan son el desarrollo web y automatizaciones, ambas con Python y sus librerias</p>
     </div>
 </div>
 
 <!--   Stack   -->
-<div class="container">
+<div class="container pt-5 mt-5">
     <div class="row">
         <div class="col">
             <div class="d-flex flex-column">
@@ -43,28 +44,33 @@ Bienvenido
             </div>
             <div class="container border border-top-0 border-end-0">                
                     <h2 class="fs-5">Las que domino y uso constantemente</h2>
-                <div class="d-flex justify-content-center p-3 justify-content-between justify-content-sm-around flex-column flex-sm-row">
-                    <div class="d-flex justify-content-around">
-                        <img class="img-fluid ms-sm-5" style="height: 4rem;" src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png" alt="Python">
-                        <img class="img-fluid ms-sm-5" style="height: 4rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIcs2QWpgQQskLX3-UoeJ3VPevF5-R_PlQJA&s" alt="Django">
+                <div class="d-flex p-3 justify-content-between justify-content-sm-center flex-column flex-sm-row">
+                    <div class="d-flex justify-content-center">
+                        <div class="flex-col">
+                            <img class="img-fluid ms-sm-5" style="height: 4rem;" src="{% static 'landing/python.png' %}" alt="Python">
+                            <p class="mt-2 ms-sm-5 text-center">Python</p>
+                        </div>
+                        <div class="flex-col">
+                            <img class="img-fluid ms-5" style="height: 4rem;" src="{% static 'landing/dj.png' %}" alt="Django">
+                            <p class="mt-2 ms-5 text-center">Django</p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-around">
-                        <img class="img-fluid ms-sm-5 mt-5 mt-sm-0" style="height: 4rem;" src="https://images.seeklogo.com/logo-png/48/2/mongodb-logo-png_seeklogo-481256.png" alt="MongoDB"> 
-                        <img class="img-fluid ms-sm-5 mt-5 mt-sm-0" style="height: 4rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT1MO4Ln0Ynz4VKkD2EDyylsYzoVg1d8FiQ&s" alt="Git"> 
+                    <div class="d-flex justify-content-center">
+                        <div class="flex-col">
+                            <img class="img-fluid ms-sm-5 mt-5 mt-sm-0" style="height: 4rem;" src="{% static 'landing/postgre.png' %}" alt="PostgreSQL"> 
+                            <p class="mt-2 ms-sm-5 text-center">PostgreSQL</p>
+                        </div>
+                        <div class="flex-col">
+                            <img class="img-fluid ms-5 mt-5 mt-sm-0" style="height: 4rem;" src="{% static 'landing/git.png' %}" alt="Git"> 
+                            <p class="mt-2 ms-5 text-center">Git</p>
+                        </div>
                     </div> 
-                </div>
-            </div>
-            <div class="container border border-top-0 border-end-0 mt-5">                
-                    <h2 class="fs-5">Conozco la teoria pero no las practico demasiado</h2>
-                <div class="d-flex justify-content-center p-3 justify-content-between justify-content-md-center">
-                    <div class="container">
-                        <img class="img-fluid me-md-5" style="height: 4rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimVPEsA0EsodQ_hvzQOcIkOSTKe38EkOaqQ&s" alt="C++">
-                        <img class="img-fluid ms-md-5 me-md-5" style="height: 4rem;" src="https://blogs.oracle.com/wp-content/uploads/sites/102/2025/11/MySQL_logo06.png" alt="MySQL">
-                    </div>
-                    <div class="container">
-                        <img class="img-fluid ms-md-5" style="height: 4rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAvZTQJRPAviEOX12q1iwgjyzijN8aVSmNZg&s" alt="Docker">   
-                        <img class="img-fluid ms-md-5" style="height: 4rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_8g6lDZLq3pL-7zxGbmf-vVNerLHcrvnvQ&s" alt="AWS"> 
-                    </div>   
+                    <div class="d-flex justify-content-center">
+                        <div class="flex-col">
+                            <img class="img-fluid ms-sm-5 mt-5 mt-sm-0" style="height: 4rem;" src="{% static 'landing/bootstrap.png' %}" alt="bootstrap">
+                            <p class="mt-2 ms-sm-5 text-center">Bootstrap</p>  
+                        </div>                  
+                    </div> 
                 </div>
             </div>
         </div>
@@ -72,38 +78,48 @@ Bienvenido
 </div>
 
 <!--   Proyectos   -->
-<div class="container pt-5">
+
+
+<div class="container pt-5 mt-5">
     <div class="row">
-        <div class="col-12">
-            <div>
-                <h1 class="display-5">Proyectos</h1>
-            </div>
-            <div class="col-12 col-md-4 card d-inline-flex m-2" style="width: 17rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPTUa1LFxO-FWLtN5SX1uhRId2GKnigkYIw&s" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil similique dolorem ullam quos quisquam aut officia voluptate laborum, eligendi minima unde voluptatem eos est. Quisquam sapiente ipsam quidem dolorum beatae!</p>
+        <div class="col">
+            <h1 class="display-5">Proyectos</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="justify-content-center">
+                <img class="img-fluid" src="{% static 'landing/landing4.png' %}" alt="">
+                <div class="d-flex justify-content-around">
+                    <a class="d-flex justify-content-center" href="#"><button type="button" class="btn mt-3 bg bg-primary justify-content-center">IR</button></a>
+                    <a class="d-flex justify-content-center mt-3" href="#"><img src="{% static 'landing/github.png' %}" alt="Github" style="height: 2rem;"></a>
                 </div>
             </div>
-            <div class="col-12 col-md-4 card d-inline-flex m-2" style="width: 17rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPTUa1LFxO-FWLtN5SX1uhRId2GKnigkYIw&s" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil similique dolorem ullam quos quisquam aut officia voluptate laborum, eligendi minima unde voluptatem eos est. Quisquam sapiente ipsam quidem dolorum beatae!</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 card d-inline-flex m-2" style="width: 17rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPTUa1LFxO-FWLtN5SX1uhRId2GKnigkYIw&s" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil similique dolorem ullam quos quisquam aut officia voluptate laborum, eligendi minima unde voluptatem eos est. Quisquam sapiente ipsam quidem dolorum beatae!</p>
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="flex-col border border-end-0 border-bottom-0 border-top-0">
+                <p class="fs-3 ms-3">Portfolio personal</p>
+                <p class="fs-5 ms-3">Con mi portfolio comprendi los conceptos basicos de Django, es decir, la creacio de proyectos y aplicaciones, la estructura del framework y los comandos basicos de manage.py. 
+                    Tambien me sirvio para aprender a hacer webs responsive usando Bootstrap
+                </p>
+                <div class="flex-row">
+                    <img class="img-fluid ms-sm-5" style="height: 2rem;" src="{% static 'landing/python.png' %}" alt="Python">
+                    <img class="img-fluid ms-5" style="height: 2rem;" src="{% static 'landing/dj.png' %}" alt="Django">
+                    <img class="img-fluid ms-sm-5 mt-5 mt-sm-0" style="height: 2rem;" src="{% static 'landing/bootstrap.png' %}" alt="bootstrap">
                 </div>
             </div>
         </div>
     </div>
 </div>
-           
-<div class="container pt-5">
+
+
+
+
+
+
+
+
+<div class="container pt-5 mt-5">
     <div class="row">
         <div class="col">
             <h1 class="display-5">Educacion</h1>
@@ -115,15 +131,15 @@ Bienvenido
             <p class="ps-3 fs-5 opacity-50">En: UTN FRBA - Desde: Marzo 2026 - Hasta: Actualidad</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row border border-top-0 border-end-0">
             <div class="col-12 col-md-8">
                 <div class="display-inline-flex">
-                    <p class="ps-3 pb-2 border border-top-0 border-end-0 fs-5 d-inline-flex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore voluptas, optio perferendis quas voluptate earum id totam rem minus consequatur, architecto autem officiis quisquam dolorum a dolore eveniet consequuntur dicta consectetur. Nihil eum minus sint quasi consequatur, illum itaque beatae asperiores in consequuntur, temporibus corporis deserunt repellendus dicta! Repudiandae.</p>
+                    <p class="ps-3 pb-2 fs-5 d-inline-flex">Comence en Marzo de 2026 esta carrera, estoy aprendiendo sobre conceptos basicos de programacion, funcionamiento de sistemas operativos, organizacion empresarial y matematicas en general</p>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="display-inline-flex">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPTUa1LFxO-FWLtN5SX1uhRId2GKnigkYIw&s" class="card-img-top" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPTUa1LFxO-FWLtN5SX1uhRId2GKnigkYIw&s" class="pb-2" alt="">
                 </div>
             </div>
 
@@ -153,11 +169,50 @@ Bienvenido
 
 <div class="container">
     <h1 class="display-5">Experiencia laboral</h1>
+    <div class="d-flex">
+
+    </div>
+    <div class="border border-alert border-top-0 border-end-0">
+        <div class="row ps-3">
+            <div class="col">
+                <p class="fs-3">Cadete</p>
+            </div>
+        </div>
+        <div class="row ps-3">
+            <div class="col">
+                <p class="ps-3 fs-5 opacity-50">En: Colegio MIlitar de la Nacion Ejercito argentino - Desde: Febrero 2024 - Hasta: Marzo 2025</p>
+            </div>
+        </div>
+        <div class="row ps-3">
+            <div class="col">
+            <p class="fs-5">Fui cadete de la escuela de oficiales del ejercito. En el corto tiempo que estuve en la fuerza aprendi muchisimas cosas, desde manejo de personal y resolucion de problemas cuando me desempeñaba como encargado de curso o encargado del aula, como trabajar aun bajo fuertes nervios hasta como comunicar ideas.
+                Fue una gran experiencia que tuve que dejar por cuestiones personales.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5">
+        <div class="border border-alert border-top-0 border-end-0">
+            <div class="row ps-3">
+                <div class="col">
+                    <p class="fs-3">Auxiliar de deposito</p>
+                </div>
+            </div>
+            <div class="row ps-3">
+                <div class="col">
+                    <p class="ps-3 fs-5 opacity-50">En: Mundo herramientas - Desde: Septiembre 2017 - Hasta: Agosto 2023</p>
+                </div>
+            </div>
+            <div class="row ps-3">
+                <div class="col">
+                <p class="fs-5">Trabaje como auxiliar de deposito en dos comercios diferentes, ambos del rubro ferreteria. Mis principales tareas eran mantener el orden de la mercaderia en el deposito, ingreso de mercaderia y armado de pedidos para clientes mayoristas.
+                Si bien trabaja en dos lugares diferentes, con un intervalo por la pandemia, los pongo juntos ya que no son una experiencia relacionada al mundo IT en el que quiero entrar
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="container">
-    <h1 class="display-5">Contacto</h1>
-</div>
 
-{% endblock %}
-                           
+{% endblock %}                     
